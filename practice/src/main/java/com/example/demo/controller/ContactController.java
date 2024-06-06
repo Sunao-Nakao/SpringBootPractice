@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-//必要なパッケージをインストール（packageとclassの間）
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,7 +17,7 @@ public class ContactController {
 								@RequestParam("buildingName") String buildingName,
 								@RequestParam("contactType") String contactType,
 								@RequestParam("body") String body,
-								ModelAndView mv) { //引数にModelAndViewを設定
+								ModelAndView mv) {
 		mv.setViewName("confirmation");
 		
 		mv.addObject("lastName", lastName);
